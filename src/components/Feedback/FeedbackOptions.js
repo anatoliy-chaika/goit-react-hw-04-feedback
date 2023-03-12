@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types';
 import { FeedbackList } from './FeedbackOptions.styled';
 
-export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
+const options = ['good', 'neutral', 'bad'];
+
+export const FeedbackOptions = ({ onLeaveFeedback }) => {
   return (
     <FeedbackList>
       {options.map(option => (
