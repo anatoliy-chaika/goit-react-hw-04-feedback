@@ -13,13 +13,13 @@ export default function App() {
   const handleIncrement = option => {
     switch (option) {
       case 'good':
-        setGood(pervState => pervState + 1);
+        setGood(prevState => prevState + 1);
         break;
       case 'neutral':
-        setNeutral(pervState => pervState + 1);
+        setNeutral(prevState => prevState + 1);
         break;
       case 'bad':
-        setBad(pervState => pervState + 1);
+        setBad(prevState => prevState + 1);
         break;
       default:
         console.log('Error with switch');
